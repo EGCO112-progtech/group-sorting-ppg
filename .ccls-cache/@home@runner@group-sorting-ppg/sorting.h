@@ -29,7 +29,7 @@ void selectionSort(int a[], int n)
         m=a[j]; 
         mi=j;   
         for(i= j+1 ;i<n; i++){
-        if(m>a[i]) 
+        if(m<a[i]) 
         {
           m=a[i];  
           mi=i;
@@ -37,7 +37,7 @@ void selectionSort(int a[], int n)
   }
   swap(&a[j],&a[mi]);
   
-  printf("Minimum is %d\n",m);
+  printf("\n");
 
   display(a,n);
   }      
@@ -70,19 +70,22 @@ void bubbleSort(int a[], int n) {
 
   int i, j;
   int sorted;
-  // how may pair to compare?
-  for (i = 0; i < n - 1; i++) {
+  display(a,n);
+  for (i = 0; i < n ; i++) {
     sorted = 0;
     for (j = 0; j < n - 1 - i; j++) {
-      if (a[j] > a[j + 1]) {
+      if (a[j] < a[j + 1]) {
         swap(&a[j], &a[j + 1]);
         sorted = 1;
       }
       display(a, n);
     }
+    printf("\n");
     if (sorted == 0)
       break;
   }
+  display(a,n);
+  printf("\n");
 }
 
 
