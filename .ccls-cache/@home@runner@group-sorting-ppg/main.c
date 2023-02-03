@@ -19,12 +19,12 @@ int main(int argc, char *argv[]) {
     display(a, n);
     printf("\n");
   }
-  if (strcmp(argv[1], "insertion") == 0) {
+  else if (strcmp(argv[1], "insertion") == 0) {
     insertion(a, n);
     display(a, n);
     printf("\n");
   }
-  if (strcmp(argv[1], "selection") == 0) {
+  else if (strcmp(argv[1], "selection") == 0) {
     selectionSort(a, n);
     display(a, n);
     printf("\n");
