@@ -55,7 +55,7 @@ void insertion(int x[], int n)
       int value = x[j];
       for(i=j-1;i>=0;i--)
       {
-        if(value>x[i]) break;
+        if(value<x[i]) break;
         else x[i+1]=x[i];
         display(x,n);
       }
