@@ -1,29 +1,34 @@
-
-#include <stdio.h>
-
 #include "sorting.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char *argv[]) {
-  int i, j = 0, *a, n, *prime;
+  int i, *a, n;
 
-  n = argc - 1;
+  n = argc - 2;
   a = (int *)malloc(sizeof(int) * n);
-  prime = (int *)malloc(sizeof(int) * n);
   for (i = 0; i < n; i++) {
-    a[i] = atoi(argv[i + 1]);
-    if (Isprime(a[i])) {
-      prime[j] = a[i];
-      j++;
-    }
+    a[i] = atoi(argv[i + 2]);
   }
 
-   display(a,N);
-  bubbleSort(a,N); 
-   //insertion(a,N);
+  printf("%s", argv[1]);
 
-  // selectionSort(a,N);
-   display(a,N);
- return 0;
+  if (strcmp(argv[1], "bubble") == 0) {
+    bubbleSort(a, n);
+    display(a, n);
+    printf("\n");
+  }
+  else if (strcmp(argv[1], "insertion") == 0) {
+    insertion(a, n);
+    display(a, n);
+    printf("\n");
+  }
+  else if (strcmp(argv[1], "selection") == 0) {
+    selectionSort(a, n);
+    display(a, n);
+    printf("\n");
+  }
+  printf("\n");
+  return 0;
 }
-
-
