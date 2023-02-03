@@ -21,7 +21,7 @@ void selectionSort(int a[], int n) {
   int i, j;
   int mi;
   int m;
-
+  display(a,n);
   for (j = 0; j < n - 1; j++) {
     m = a[j];
     mi = j;
@@ -31,18 +31,19 @@ void selectionSort(int a[], int n) {
         mi = i;
       }
     }
+      display(a, n);
+    printf("\n");
     swap(&a[j], &a[mi]);
 
-    printf("\n");
-
-    display(a, n);
+    
   }
+  display(a,n);
 }
 
 void insertion(int x[], int n) {
   int i, j;
   int value = x[j];
-
+  display(x,n);
   for (j = 1; j < n; j++) {
     int value = x[j];
     for (i = j - 1; i >= 0; i--) {
@@ -56,6 +57,7 @@ void insertion(int x[], int n) {
     display(x, n);
     printf("\n");
   }
+    display(x,n);
 }
 
 void bubbleSort(int a[], int n) {
