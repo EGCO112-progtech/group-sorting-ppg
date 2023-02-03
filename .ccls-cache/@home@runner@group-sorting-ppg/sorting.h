@@ -86,21 +86,7 @@ void bubbleSort(int a[], int n) {
 }
 
 
-void bubbleSort(int a[], int n) {
-  int i, j;
-  int sorted;
-  display(a,n);
-  for (i = 0; i < n ; i++) {
-    sorted = 0;
-    for (j = 0; j < n - 1 - i; j++) {
-      if (a[j] < a[j + 1]) {
-        swap(&a[j], &a[j + 1]);
-        sorted = 1;
-      }
-      display(a, n);
-    } printf("\n");
-    if (sorted == 0)
-      break;
-  }
-  display(a,n);
-}
+
+
+
+
