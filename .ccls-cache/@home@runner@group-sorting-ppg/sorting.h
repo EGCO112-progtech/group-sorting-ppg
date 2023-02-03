@@ -30,14 +30,12 @@ void selectionSort(int a[], int n) {
         m = a[i];
         mi = i;
       }
-    }
-      display(a, n);
-    printf("\n");
+    }  
     swap(&a[j], &a[mi]);
-
-    
+    display(a, n);
+    printf("\n");
   }
-  display(a,n);
+   printf("\n");
 }
 
 void insertion(int x[], int n) {
@@ -57,7 +55,7 @@ void insertion(int x[], int n) {
     display(x, n);
     printf("\n");
   }
-    display(x,n);
+    printf("\n");
 }
 
 void bubbleSort(int a[], int n) {
