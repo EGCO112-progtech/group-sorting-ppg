@@ -79,7 +79,7 @@ void bubbleSort(int a[], int n) {
   display(a, n);
   printf("\n");
 }
-
+/*
 
 void bubbleSort(int a[], int n) {
   int i, j;
@@ -100,3 +100,4 @@ void bubbleSort(int a[], int n) {
   display(a,n);
 }
 
+*/
