@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
     a[i] = atoi(argv[i + 2]);
   }
 
-  printf("%s", argv[1]);
+  //printf("%s", argv[1]);
 
   if (strcmp(argv[1], "bubble") == 0) {
     bubbleSort(a, n);
